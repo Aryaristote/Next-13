@@ -3,7 +3,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-      All User Pages
+      Post with the ID <b>{userId}</b> 
     </div>
   )
 }
