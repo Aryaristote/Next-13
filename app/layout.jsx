@@ -1,11 +1,13 @@
-import '@styles/globals.css';
+import "../styles/globals.css";
+import Nav from "../components/Nav";
+import "../components/Provider";
 
 export const metadata = {
     title: "Promptopia",
     description: 'Discover & Share AI Prompts'
 }
 
-const RouteLayout = () => {
+const RouteLayout = ({ children }) => {
   return (
     <html lang="en">
         <body>
@@ -13,6 +15,7 @@ const RouteLayout = () => {
                 <div className='gradient' />
             </div>
             <main className="app">
+                <Nav />
                 {children}
             </main>
         </body>
